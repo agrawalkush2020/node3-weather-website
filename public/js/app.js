@@ -27,7 +27,6 @@ const messagetwo=document.querySelector('#message-2');
 weatherform.addEventListener('submit',(e)=>{
     e.preventDefault()    //isse vo default action prevent krlenge
     const location=search.value;
-    console.log(search.value);
 
     messageone.textContent='Loading !!';
     messagetwo.textContent='';           // isko empty krenge kyonki pichle waala text save naa ho isliye

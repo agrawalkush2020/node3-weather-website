@@ -339,8 +339,6 @@ const express=require('express');
 const hbs=require('hbs');
 const geocode=require('./utils/geocode');
 const forecast=require('./utils/forecast');
-const { count } = require('console');
-
 
 const app=express();
 
@@ -422,12 +420,12 @@ app.get('/help/*',(req,res)=>{
     })
 })
 
-app.get('/what',(req,res)=>{
-    res.render('404',{
-        error:'404',
-        title:'page not found'
-    });
-})
+// app.get('/what',(req,res)=>{
+//     res.render('404',{
+//         error:'404',
+//         title:'page not found'
+//     });
+// })
 
 app.listen(3000,()=>{
     console.log('server is up on port 3000');
