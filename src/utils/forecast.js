@@ -32,7 +32,8 @@ const forecast=(longitude,latitude,callback)=>{
             callback('unable to find the location !!',undefined);
         }
         else{
-            const data=body.current.weather_descriptions[0]+'. The original temperature is '+body.current.temperature+' Fahrenheit, But the feeling temperature is '+body.current.feelslike+' Fahrenheit';
+            console.log(body);
+            const data=body.current.weather_descriptions[0]+'. The original temperature is '+body.current.temperature+' Fahrenheit, But the humidity is ' + body.current.humidity;
             callback(undefined,data);
         }
     });
